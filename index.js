@@ -1,5 +1,6 @@
 // https://api.coingecko.com/api/v3/simple/price?ids=BITCOIN&vs_currencies=USD
-document.addEventListener('DOMContentLoaded',function(){
+function getprice(){
+    console.log("Called")
     fetch('https://api.coingecko.com/api/v3/simple/price?ids=BITCOIN&vs_currencies=USD')
     .then(response=>response.json())
     .then(result=> {
@@ -15,4 +16,8 @@ document.addEventListener('DOMContentLoaded',function(){
             }
         }
     })
+}
+document.addEventListener('DOMContentLoaded',function(){
+    getprice()
+    setInterval(getprice,20000)
 })
