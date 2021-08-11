@@ -9,14 +9,17 @@
     <link href="./style.css" rel=stylesheet>
 </head>
 <body>
-    <header>
-        <h2 class="h2-s">CryptoPrice</h2>
-        <h1 class='h1-s'>Simple Bitcoin Converter</h1>
+    <header style="position: fixed; top: 0;">
+        <h2 class="h2-s" style="position: absolute;left: 0; top: 0;">CryptoPrice</h2>
+        <div style="width: 100%;margin: auto;">
+            <h1 class='h1-s' style="margin: auto;">Simple Bitcoin Converter</h1>
+        </div>
     </header>
-    <p>Price of bitcoin</p>
-    <input class="num" id="invField1" style="font-weight: 300; width: 39px;">
-    <button class="coin-select" id="unitABut" onclick="showUnitField(unitAField)" style="cursor: default" tabindex="-1"><span class="Prefix" id="prefixField" style="display: none; transition: none 0s ease 0s; visibility: hidden;"></span><span id="unitASym">BTC</span><span class="Arrow"></span></button>
-    <input class="display" id="invField2" style="font-weight: 300; width: 39px;">
-    <button class="currency-select" id="curBut" onclick="showUnitBField()" tabindex="-1"><span id="unitBSym">USD</span><span class="Arrow"></span></button>
+    <div style="margin: 70px;">
+        <input class="num" id="invField1" style="font-weight: 300; width: 39px;">
+        <button class="coin-select" id="unitABut" onclick="showUnitField(unitAField)" style="cursor: default" tabindex="-1"><span class="Prefix" id="prefixField" style="display: none; transition: none 0s ease 0s; visibility: hidden;"></span><span id="unitASym">BTC</span><span class="Arrow"></span></button>
+        <input class="display" id="invField2" style="font-weight: 300; width: 39px;">
+        <button class="currency-select" id="curBut" onclick="showUnitBField()" tabindex="-1"><span id="unitBSym">USD</span><span class="Arrow"></span></button>
+    </div>
 </body>
 </html>
