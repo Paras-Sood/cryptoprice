@@ -35,16 +35,27 @@ header{
 }
 
 .form-control{
-    width: 50% !important;
+    display:inline-block !important;
+    width: 30% !important;
     margin-bottom: 5px;
     justify-content: center !important;
     margin: auto;
-}
-
-.btn{
-    width: 13%;
+    margin-right: 10px;
 }
 
 #invField2{
     margin-top: 30px;
+}
+
+/* .field1{
+    display: flex;
+    justify-content: center;
+} */
+
+div.field1{
+    box-sizing: unset !important;
+}
+
+*, ::after, ::before {
+    box-sizing: unset !important;
 }
