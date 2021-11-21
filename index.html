@@ -7,19 +7,21 @@
     <title>Document</title>
     <script src="index.js"></script>
     <link href="./style.css" rel=stylesheet>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 <body>
     <header style="position: fixed; top: 0;">
-        <h2 class="h2-s" style="position: absolute;left: 0; top: 0;">CryptoPrice</h2>
+        <h2 class="h2-s" style="position: absolute;left: 10px; top: 10px;">CryptoPrice</h2>
         <div style="width: 100%;margin: auto;">
             <h1 class='h1-s' style="margin: auto;">Simple Bitcoin Converter</h1>
         </div>
     </header>
-    <div style="margin: 70px;">
-        <input class="num" id="invField1" style="font-weight: 300; width: 39px;">
-        <button class="coin-select" id="unitABut" onclick="showUnitField(unitAField)" style="cursor: default" tabindex="-1"><span class="Prefix" id="prefixField" style="display: none; transition: none 0s ease 0s; visibility: hidden;"></span><span id="unitASym">BTC</span><span class="Arrow"></span></button>
-        <input class="display" id="invField2" style="font-weight: 300; width: 39px;">
-        <button class="currency-select" id="curBut" onclick="showUnitBField()" tabindex="-1"><span id="unitBSym">USD</span><span class="Arrow"></span></button>
+    <div class="main">
+        <input class="form-control num " id="invField1">
+        <button class="btn btn-primary coin-select" id="unitABut" onclick="showUnitField(unitAField)" style="cursor: default" tabindex="-1"><span class="Prefix" id="prefixField" style="display: none; transition: none 0s ease 0s; visibility: hidden;"></span><span id="unitASym">BTC</span><span class="Arrow"></span></button>
+        <input class="form-control display" id="invField2">
+        <button class="btn btn-primary currency-select" id="curBut" onclick="showUnitBField()" tabindex="-1"><span id="unitBSym">USD</span><span class="Arrow"></span></button>
     </div>
 </body>
 </html>

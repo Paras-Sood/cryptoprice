@@ -21,3 +21,30 @@ header{
     font-weight: 400;
     align-self: center;
 }
+
+.coin-select{
+
+}
+
+.main{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-top:200px;
+}
+
+.form-control{
+    width: 50% !important;
+    margin-bottom: 5px;
+    justify-content: center !important;
+    margin: auto;
+}
+
+.btn{
+    width: 13%;
+}
+
+#invField2{
+    margin-top: 30px;
+}
