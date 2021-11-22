@@ -24,7 +24,7 @@ header{
 
 .main{
     margin: auto;
-    width: 50%;
+    width: 70%;
     padding: 10px;
     text-align: center;
     margin-top:200px;
@@ -32,28 +32,29 @@ header{
 
 .form-control{
     display:inline-block !important;
-    width: 30% !important;
+    width: 25% !important;
     margin-bottom: 5px;
     justify-content: center !important;
-    margin: auto;
-.btn{
+    margin-right: 10px;
+}
+/* .btn{
     width: 13%;
     margin: 10px;
-}
+} */
 
 #invField2{
     margin-top: 30px;
 }
 
-/* .field1{
+.field1{
     display: flex;
     justify-content: center;
-} */
+}
 
 div.field1{
     box-sizing: unset !important;
 }
 
-*, ::after, ::before {
+*, ::after, ::before{
     box-sizing: unset !important;
 }
