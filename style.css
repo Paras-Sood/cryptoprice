@@ -37,14 +37,16 @@ header{
     justify-content: center !important;
     margin-right: 10px;
 }
-/* .btn{
-    width: 13%;
-    margin: 10px;
-} */
-
-#invField2{
-    margin-top: 30px;
+.btn{
+    width: 30px;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+    height: 36px;
 }
+
+/* #invField2{
+    margin-top: 30px;
+} */
 
 .field1{
     display: flex;
@@ -57,4 +59,11 @@ div.field1{
 
 *, ::after, ::before{
     box-sizing: unset !important;
+}
+
+.field2{
+    display: flex;
+    margin-top: 30px;
+    height: 43px;
+    justify-content: center;
 }
