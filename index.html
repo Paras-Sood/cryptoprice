@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="index.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
     <link href="./style.css" rel=stylesheet>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 <body>
-    <header style="position: fixed; top: 0;">
+    <header style="position: fixed; top: 0;color: white;background-color: black;font-family: Arial, Helvetica, sans-serif;">
         <h2 class="h2-s" style="position: absolute;left: 10px; top: 10px;">CryptoPrice</h2>
         <div style="width: 100%;margin: auto;margin-top: 20px;">
             <h1 class='h1-s' style="margin: auto;">Simple Bitcoin Converter</h1>
@@ -25,6 +30,14 @@
         <input class="form-control display" id="invField2">
         <button class="btn btn-primary currency-select" id="curBut" onclick="showUnitBField()" tabindex="-1"><span id="unitBSym">USD</span><span class="Arrow"></span></button>
     </div>
-    
+    <select name="num_days" id="numdays" style="margin: 20px;float: right;">
+        <option value="1">Last 24 hours</option>
+        <option value="5">Last 5 Days</option>
+        <option value="30">Last Month</option>
+        <option value="90">Last 3 Months</option>
+        <option value="180">Last 6 Months</option>
+        <option value="365">Last 1 Year</option>
+    </select>
+    <div id="graph_div" style="width: 85%;margin: 20px auto;"></div>
 </body>
 </html>
